@@ -29,7 +29,7 @@ catch(Exception $e)
         </tr>
 -->
      <?php
-    $bdd->exec("INSERT INTO Mesure_Table VALUES ('20')");
+    $bdd->exec("INSERT INTO Mesure_Table(M_distance) VALUES ('22')");
     //$reponse = $bdd->query('SELECT * FROM Mesure_Table LIMIT 0, 12');
 /*
     while ($donnees = $reponse->fetch())
