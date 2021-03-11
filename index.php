@@ -11,8 +11,9 @@ catch(Exception $e)
 }    
 
 ?>
+ 
+<html> 
 
-<html>  < !--  début de la page web -->
    <head>
       <title>données</title>
     <meta http-equiv="refresh" content="5"/>
@@ -20,14 +21,17 @@ catch(Exception $e)
    </head>
 <body>
    <h1>Donn&eacute;es</h1>
+  <!--
    <table border="1" cellspacing="1" cellpadding="1" >
         <tr class='titre_tab'>
-            <!--<td>&nbsp;Date & heure&nbsp;</td>-->
+            <td>&nbsp;Date & heure&nbsp;</td>
             <td>&nbsp;valeur&nbsp;</td>
         </tr>
+-->
      <?php
-    $reponse = $bdd->query('SELECT * FROM distance LIMIT 0, 12');
-
+    $bdd->exec("INSERT INTO Mesure_Table VALUES ('20')");
+    //$reponse = $bdd->query('SELECT * FROM Mesure_Table LIMIT 0, 12');
+/*
     while ($donnees = $reponse->fetch())
     {
     ?>
@@ -36,9 +40,10 @@ catch(Exception $e)
         </td></tr>
     <?php
     }
-    $reponse->closeCursor(); // Termine le traitement de la requête
+    */
+    
 
       ?>
-</table>
+
 </body>
 </html>
