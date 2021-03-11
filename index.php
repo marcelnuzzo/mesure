@@ -3,7 +3,7 @@
 
 try
 {     // connection à la base de données
-    $bdd = new PDO('mysql:host=localhost;dbname=detectiot', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=mesure', 'root', '1234');
 }
 catch(Exception $e)
 {
